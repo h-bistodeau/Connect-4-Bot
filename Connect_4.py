@@ -1,19 +1,12 @@
 
 # Hailey Bistodeau 10/21
-# for this project I made three additional functions to handle the strategy and to pull it into the minimax function
-# the first function I created was ideal_move and that is the funciton that breaks apart the board into smaller/more manageable
+# for this project I made three additional helper functions to handle the strategy and to pull it into the minimax function
+# the first function I created was ideal_move and that is the function that breaks apart the board into smaller/more manageable
 # sections. To do this I created 1x4 sections going horizonal, vertical, and both positive and negative diagonals. With these
 # smaller sections I move into my evaluate_move function because that works directly with ideal_move. Evaluate_Move is what gives
 # the ai 'points' for certain movements or strategies. I could have just had these two functions combined but it got repetitive
 # so i chose to just call evaluate_move within ideal move (as you'll probably see). The last is the choose_move function which
 # compares the scores of potential moves and keeps track of the best possible score and the column associated with that score.
-
-# for the graphs
-# (i got rid of that code as well as the Ai vs. Ai to keep the file length shorter(shes already a bit too long, i would optimize if i had time)
-# anyway to get the graphs i wanted to look at the scores per move as well as see how long it took to reach a conclusion. So i used matplotlib
-# to build the graphs and as you can see on the graphs it got a bit dramatic due to the large win state but mostly because a lot of scores
-# are only worth 5 until later in the game. And there are 3 for each of the heuristics normal four in a row, block your opponents, center priority
-# to do that i literally just commented out pieces of code and ran it that way.
 
 import pygame
 import statistics
